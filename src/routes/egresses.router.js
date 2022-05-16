@@ -2,7 +2,7 @@ const { EgressesController } = require('../controllers/egresses.controller');
 
 const controller = new EgressesController();
 
-const incomesRoutes = async (fastify, options) => {
+const egressesRouter = async (fastify, options) => {
   fastify.get('/', async (request, reply) => {
     await controller.getAll(request, reply);
   });
@@ -24,4 +24,4 @@ const incomesRoutes = async (fastify, options) => {
   });
 };
 
-module.exports = incomesRoutes;
+module.exports = egressesRouter;

@@ -26,6 +26,7 @@
     "nodemon": "^2.0.16"
   },
   "dependencies": {
+    "@fastify/cors": "^7.0.0",
     "deta": "^1.1.0",
     "fastify": "^3.29.0"
   }

@@ -1,5 +1,11 @@
 const fastify = require('fastify')({ logger: true });
 
+// Cors Config
+fastify.register(require('@fastify/cors'), {
+  origin: ['*'],
+  methods: ['GET', 'PUT', 'POST', 'DELETE'],
+});
+
 // Routes
 fastify.register(require('./routes/incomes.router'), { prefix: '/v1/incomes' });
 fastify.register(require('./routes/egresses.router'), {

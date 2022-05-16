@@ -69,8 +69,8 @@ class EgressesController {
     }
   }
 
-  async deleteEgress(key) {
-    await this.service.delete(key);
+  async deleteEgress(request, reply) {
+    await this.service.delete(request.params.key);
   }
 }
 

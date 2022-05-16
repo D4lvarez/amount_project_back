@@ -6,7 +6,7 @@ class IncomesController {
   }
 
   async create(request, reply) {
-    const body = request;
+    const body = request.body;
 
     const newIncome = {
       amount: body.amount,

@@ -68,6 +68,10 @@ class EgressesController {
       });
     }
   }
+
+  async deleteEgress(key) {
+    await this.service.delete(key);
+  }
 }
 
 module.exports = {

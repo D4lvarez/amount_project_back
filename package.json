@@ -1,0 +1,21 @@
+{
+  "name": "amount_project_back",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node ./src/index",
+    "dev": "nodemon ./src/index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/D4lvarez/amount_project_back.git"
+  },
+  "author": "Diego Alvarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/D4lvarez/amount_project_back/issues"
+  },
+  "homepage": "https://github.com/D4lvarez/amount_project_back#readme"
+}

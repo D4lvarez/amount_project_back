@@ -7,27 +7,27 @@ class EgressesServices {
 
   async put(data) {
     try {
-      const income = await this.db.put(data);
-      return income;
+      const egress = await this.db.put(data);
+      return egress;
     } catch (err) {
       return err;
     }
   }
 
   async get(key) {
-    const income = await this.db.get(key);
-    return income;
+    const egress = await this.db.get(key);
+    return egress;
   }
 
   async fetch() {
-    const incomes = await this.db.fetch();
-    return incomes.items;
+    const egresses = await this.db.fetch();
+    return egresses.items;
   }
 
   async update(data, key) {
     try {
-      const updateIncome = await this.db.update(data, key);
-      return updateIncome;
+      const updateEgress = await this.db.update(data, key);
+      return updateEgress;
     } catch (err) {
       return err;
     }
